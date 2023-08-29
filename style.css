@@ -1,0 +1,172 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container-header {
+    display: flex;
+    /*De esta manera los elementos se muestran de manera horizontal*/
+    justify-content: space-between;
+    /*De esta manera los elementos se separan uno en un extremo y el otro en el otro extremo*/
+    align-items: center;
+    /*De esta manera Quedan alineados en el centro */
+    min-height: 110px; /*Esto le coloco para que a la hora de hcaerlo responsive se adapte*/
+    background-color: #F2F2F2;
+    padding: 25px;
+
+}
+
+
+.enlaces {
+    font-size: 23px;
+    color: #808080;
+    text-decoration: none;
+    padding-right: 18px;
+}
+
+.enlaces:hover {
+    color: #D2A94C;
+}
+
+
+
+.button-contact {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    color: #ffffff;
+    background: #D2A94C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 5px #808080;
+}
+
+.button-contact:hover {
+    background-color: #ffffff;
+    color: #808080;
+}
+
+
+
+.section-main {
+    height: 620px;
+    background-image: url(./assets/portada-camaro-op2.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ffffff;
+    position: absolute;
+    margin: 20px 0 0 20px;
+    text-shadow: 0 5px 3px #808080;
+}
+
+p {
+    font-size: 25px;
+    color: #ffffff;
+    position: absolute;
+    margin: 90px 0 0 20px;
+    text-shadow: 0 5px 3px #808080;
+}
+
+.div-button-color {
+    height: 90px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.div-button-color button {
+    height: 30px;
+    width: 50px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: 0 3px 5px #808080;
+}
+
+#blue {
+    background-color: #122E60;
+}
+
+#orange {
+background-color: #B23B0B;
+}
+
+#gray {
+    background-color: #3B4249;
+
+}
+
+#white {
+    background-color: #D3D4D6;
+}
+
+
+@media screen and (max-width:700px)  {
+    .container-header {
+        flex-direction: column;
+    }
+
+    nav {
+        display: inline-grid;
+        justify-items: center;
+        margin: 15px 0;
+    }
+
+    .enlaces {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    
+.button-contact {
+    width: 90px;
+    height: 30px;
+    font-size: 16px;
+    margin-inline-end: auto;
+}
+
+.section-main {
+    background-image: url(./assets/portada-camaro-op2.png);
+    height:  240px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+}
+
+h1 {
+    font-size: 30px;
+    position: absolute;
+    margin: 160px 0 0 20px;
+    text-shadow: 0 2px 3px #808080;
+}
+
+p {
+    font-size: 20px;
+    position: absolute;
+    margin: 195px 0 0 20px;
+    text-shadow: 0 2px 3px #808080;
+}
+
+.div-button-color button {
+    height: 30px;
+    width: 50px;
+}
+
+#img-change {
+    width: 100vw;
+    height: auto;
+}
+}
+
+
